@@ -2,15 +2,15 @@
 
 A beautiful, themed, and responsive To-Do List web application that helps you organize your daily, work, fitness, and weekly tasks efficiently. Built using **HTML**, **CSS**, and **JavaScript**, this project was developed as part of an internship project.
 
----
+
 
 📂 Features
 
 -  Four Themed Sections:
-  - 💼 **Work**– Professional grayscale layout
-  - 🌞 **Daily** – Calming blue background
-  - 💪 **Fitness** – Energetic yellow-beige theme
-  - 📅 **Weekly** – Subtle green layout
+  - 💼 **Work**
+  - 🌞 **Daily** 
+  - 💪 **Fitness** 
+  - 📅 **Weekly** 
 
 - To-Do Management:
   - Add, edit, delete tasks
@@ -30,13 +30,13 @@ A beautiful, themed, and responsive To-Do List web application that helps you or
 - *Persistent Storage*:
   - All tasks, notes, and dates are saved locally using `localStorage`
 
----
+
 
 # Technologies Used
 
 - HTML5
 - CSS3 
-- JavaScript (Vanilla) 
+- JavaScript 
 - Google Fonts
 - Responsive Design 
 
