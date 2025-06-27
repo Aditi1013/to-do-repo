@@ -1,0 +1,318 @@
+ body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fc;
+  color: #333;
+}
+
+
+.work-theme { background-color: #616161be; color: #030303; }
+.daily-theme { background-color: rgb(168, 154, 154);color: #030303; }
+.fitness-theme { background-color: #aa938b;color: #030303;}
+.weekly-theme { background-color: #a38080; color: #030303;}
+
+
+.split-layout {
+  display: flex;
+  height: 100vh;
+}
+
+
+.landing-title {
+  font-size: 8rem;
+  font-weight:bolder;
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+}
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-btn {
+  font-size: 1rem;
+  background: #1d1b1b;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.8);
+}
+.todo-section ul {
+  list-style: none;
+  padding: 0;
+}
+.todo-section li {
+  background: #c4c1c1;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+input[type="text"], textarea, input[type="date"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.fade-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+.fade-button:nth-child(1) { animation-delay: 0.3s; }
+.fade-button:nth-child(2) { animation-delay: 0.6s; }
+.fade-button:nth-child(3) { animation-delay: 0.9s; }
+.fade-button:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.landing-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.landing-buttons a {
+  font-size: 1.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  background-color: white;
+  color: #4b7bec;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.landing-buttons a:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.fade-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+.fade-button:nth-child(1) { animation-delay: 0.3s; }
+.fade-button:nth-child(2) { animation-delay: 0.6s; }
+.fade-button:nth-child(3) { animation-delay: 0.9s; }
+.fade-button:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+
+.menu a:nth-child(1) { animation-delay: 0.3s; }
+.menu a:nth-child(2) { animation-delay: 0.6s; }
+.menu a:nth-child(3) { animation-delay: 0.9s; }
+.menu a:nth-child(4) { animation-delay: 1.2s; }
+
+.menu a:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.side-by-side-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background: linear-gradient(135deg, #f3eee5 0%, #d46f6c 100%);
+  color: #360407;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.branding {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  max-width: 50%;
+}
+
+.main-title {
+  font-family:georgia, cursive;
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1.0;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  min-width: 250px;
+  padding-left: 8rem;
+}
+
+.menu a {
+  font-size: 2.8rem;
+  padding: 1rem 4.5rem;
+  background-color: #110000;
+  color: #ece1e0;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  
+}
+
+.menu a:nth-child(1) { animation-delay: 0.3s; }
+.menu a:nth-child(2) { animation-delay: 0.6s; }
+.menu a:nth-child(3) { animation-delay: 0.9s; }
+.menu a:nth-child(4) { animation-delay: 1.2s; }
+
+.menu a:hover {
+  background-color: #520e0e;
+  transform: scale(1.07);
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  position: relative; 
+  top: 0;
+  z-index: 10;
+}
+
+.sub-menu a {
+  background-color: #2e1010;
+  color: #c4c1c1;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.todo-section li {
+  background: #c4c1c1;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-section li span {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.todo-section li button {
+  background-color: #1d1b1b;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.todo-section li button:hover {
+  background-color: #520e0e;
+}
+

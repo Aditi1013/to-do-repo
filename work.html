@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Work Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="work-theme">
+  <div class="sub-menu">
+    <a href="fitness.html" class="fitness-button">💪 Fitness</a>
+    <a href="daily.html" class="daily-button">🌞 Daily</a>
+    <a href="weekly.html" class="weekly-button">📅 Weekly</a>
+  </div>
+
+  <div class="app">
+    <header>
+      <h1>💼 Work Planner</h1>
+      <a href="index.html" class="back-btn">← Back</a>
+    </header>
+
+    <section class="meta-info">
+      <div id="dateDisplay"></div>
+      <div class="daily-quote">"Productivity is never an accident."</div>
+    </section>
+
+    <main>
+      <div class="todo-section">
+        <h2>Tasks</h2>
+        <ul id="todoList"></ul>
+        <div class="input-wrapper">
+          <input type="text" id="newTodo" placeholder="New task..." />
+          <button id="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="note-section">
+        <h2>Notes</h2>
+        <textarea id="noteArea" placeholder="Meeting notes, ideas..."></textarea>
+      </div>
+
+      <div class="calendar-section">
+        <h2>Schedule</h2>
+        <input type="date" id="calendarInput" />
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+    <script>
+  const pageKey = 'dailyTasks'; 
+  document.getElementById('addBtn').addEventListener('click', () => addTodoItem(pageKey));
+  renderTodos(pageKey);
+</script>
+</body>
+</html>
